@@ -603,5 +603,14 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const mobileNavButton = document.querySelector(".btn-mobile-nav");
+      const mainNav = document.querySelector(".main-nav");
+      const body = document.body;
+
+      mobileNavButton.addEventListener("click", () => {
+        body.classList.toggle("nav-open");
+      });
+    </script>
   </body>
 </html>
