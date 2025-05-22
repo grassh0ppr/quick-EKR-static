@@ -606,10 +606,17 @@
     <script>
       const mobileNavButton = document.querySelector(".btn-mobile-nav");
       const mainNav = document.querySelector(".main-nav");
+      const navLinks = document.querySelectorAll(".main-nav-link");
       const body = document.body;
 
       mobileNavButton.addEventListener("click", () => {
         body.classList.toggle("nav-open");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          body.classList.remove("nav-open");
+        });
       });
     </script>
   </body>
