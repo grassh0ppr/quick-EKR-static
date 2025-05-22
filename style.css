@@ -30,6 +30,15 @@ a:visited {
 
 section {
   min-height: 100vh;
+  scroll-margin-top: 8rem; /* Adjust this value to match the height of your fixed navbar */
+}
+
+section:before {
+  content: "";
+  display: block;
+  height: 2rem;
+  margin-top: -1rem; /* Negative margin to offset the scroll position */
+  visibility: hidden;
 }
 
 section h2 {
