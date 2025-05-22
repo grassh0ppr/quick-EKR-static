@@ -895,10 +895,6 @@ footer p {
 }
 
 @media screen and (max-width: 487px) {
-  #hero {
-    /* background-size: contain; */
-  }
-
   .btn-flexbox {
     flex-direction: column;
     width: 96%;
