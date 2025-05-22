@@ -533,11 +533,13 @@
               alt="Kip Dynamite gif, just for kicks"
             />
           </div>
+
           <form
             class="form contact"
             method="POST"
             style="max-width: 800px"
             netlify
+            name="contact"
           >
             <div class="mb-3">
               <div class="row">
@@ -550,6 +552,7 @@
                     class="form-control"
                     id="firstNameInput"
                     required
+                    name="first-name"
                   />
                 </div>
                 <div class="col-12 col-sm-6">
@@ -561,6 +564,7 @@
                     class="form-control"
                     id="lastNameInput"
                     required
+                    name="last-name"
                   />
                 </div>
               </div>
@@ -575,6 +579,7 @@
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 required
+                name="email"
               />
               <div id="emailHelp" class="form-text">
                 I'll never share it with anyone, promise!
@@ -589,6 +594,7 @@
                 id="exampleFormControlTextarea1"
                 rows="3"
                 required
+                name="message"
               ></textarea>
             </div>
             <!-- <div class="mb-3 form-check">
