@@ -550,7 +550,7 @@ button.btn.portal:hover {
 
 .form label {
   font-size: 1.6rem;
-  color: #fe7ac2;
+  color: #d24fdc;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -565,7 +565,7 @@ button.btn.portal:hover {
 }
 
 .form button.btn-primary {
-  background-color: #ff008c;
+  background-color: #a541ac;
   color: #fff;
   cursor: pointer;
   /* height: 3.2rem; */
@@ -573,7 +573,7 @@ button.btn.portal:hover {
   border: none;
   border-radius: 0.4rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.3s ease;
 }
 
