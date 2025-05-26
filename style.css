@@ -386,7 +386,7 @@ section h2 {
 }
 .project:nth-child(4) {
   background-image: linear-gradient(to bottom, #232323a0, #03030390),
-    url(./images/books.png);
+    url(./images/wildfire-form-scrnsht.png);
 }
 .project:nth-child(5) {
   background-image: linear-gradient(to bottom, #232323a0, #03030390),
@@ -394,7 +394,7 @@ section h2 {
 }
 .project:nth-child(6) {
   background-image: linear-gradient(to bottom, #232323a0, #03030390),
-    url(./images/todo.png);
+    url(./images/new-nmpsia-home-proto.png);
 }
 
 .github-link {
