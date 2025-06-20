@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The portfolio of Emma Reed, a front-end web developer and UI/UX designer based in Santa Fe, NM."
+    />
     <title>Emma Reed | Web Developer Portfolio</title>
+    <link
+      rel="icon"
+      href="images/pieces/diet_coke_lizard.png"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="images/pieces/diet_coke_lizard.png" />
 
     <!-- bootstrap styles -->
     <link
@@ -55,7 +65,7 @@
           <div class="hero-flex">
             <h1>Emma K. Reed</h1>
             <p class="hero-paragraph">
-              Front-end web developer & UI/UX designer based in Santa Fe, NM
+              Front-end web developer & UI/UX designer <br />📍 Santa Fe, NM
             </p>
             <div class="btn-flexbox">
               <a class="btn hero-btn" href="#projects">View Portfolio</a>
@@ -67,7 +77,7 @@
           <h2>About Me</h2>
           <div class="flex-container">
             <img
-              src="./images/EB47A4AC-E5CE-4CBE-9715-09F7443549E1.jpeg"
+              src="./images-compressed/EB47A4AC-E5CE-4CBE-9715-09F7443549E1.jpeg"
               alt="Headshot of Emma"
               class="about-headshot"
             />
@@ -110,6 +120,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project1"
+              aria-label="View details for Group Benefits Website project"
             >
               <h3>Group Benefits Website</h3>
             </button>
@@ -119,6 +130,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project2"
+              aria-label="View details for Release of Health Info Web Form project"
             >
               <h3>Release of Health Info Web Form</h3>
             </button>
@@ -127,6 +139,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project3"
+              aria-label="View details for NMPSIA District contact Database project"
             >
               <h3>NMPSIA District contact Database</h3>
             </button>
@@ -136,6 +149,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project4"
+              aria-label="View details for Natural Disaster Relief Application project"
             >
               <h3>Natural Disaster Relief Application</h3>
             </button>
@@ -145,6 +159,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project5"
+              aria-label="View details for React js Pack N Go App project"
             >
               <h3>React js Pack N Go App</h3>
             </button>
@@ -154,6 +169,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project6"
+              aria-label="View details for To Do List (React JS) project"
             >
               <h3>To Do List (React JS)</h3>
             </button> -->
@@ -163,6 +179,7 @@
               class="btn project"
               data-bs-toggle="modal"
               data-bs-target="#project7"
+              aria-label="View details for Figma Prototype of NMPSIA 2025 Redesign project"
             >
               <h3>Figma Prototype of NMPSIA 2025 Redesign</h3>
             </button>
@@ -170,8 +187,76 @@
           <p class="github-link">
             Check out my
             <a href="https://github.com/emmakatharyn" target="_blank">GitHub</a>
-            for more projects.
+            for more projects.<br />
+            <a
+              href="#"
+              id="show-art-gallery"
+              class="main-nav-link"
+              style="
+                font-size: 1.8rem;
+                color: #7ae649;
+                text-decoration: underline;
+                cursor: pointer;
+              "
+              >🎨 View my art gallery</a
+            >
           </p>
+        </section>
+
+        <section
+          id="art-gallery"
+          style="
+            display: none;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 4rem 0;
+          "
+        >
+          <h2 style="text-align: center">Art Gallery</h2>
+          <div class="art-gallery-grid">
+            <img
+              src="images/pieces/The_summit.png"
+              alt="The Summit"
+              class="art-piece"
+              loading="lazy"
+            />
+            <img
+              src="images/pieces/couch.png"
+              alt="Couch"
+              class="art-piece"
+              loading="lazy"
+            />
+            <img
+              src="images/pieces/nippon.png"
+              alt="Nippon"
+              class="art-piece"
+              loading="lazy"
+            />
+            <img
+              src="images/pieces/martini_theatre.png"
+              alt="Martini Theatre"
+              class="art-piece"
+              loading="lazy"
+            />
+            <img
+              src="images/pieces/htx_dreamscape.png"
+              alt="HTX Dreamscape"
+              class="art-piece"
+              loading="lazy"
+            />
+            <!-- <img
+              src="images/pieces/diet_coke_lizard.png"
+              alt="Diet Coke Lizard"
+              class="art-piece"
+              loading="lazy"
+            /> -->
+            <img
+              src="images/pieces/ahhhhhh.png"
+              alt="Ahhhhhh"
+              class="art-piece"
+              loading="lazy"
+            />
+          </div>
         </section>
 
         <!-- ******* move into a project modal ***** -->
@@ -214,12 +299,12 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/myben_home_light.png"
+                  src="/images-compressed/myben_home_light.png"
                   alt="MyBenefitsNM home page in light theme"
                 />
                 <img
                   class="img-fluid"
-                  src="/images/mybenefits_home.png"
+                  src="/images-compressed/mybenefits_home.png"
                   alt="MyBenefitsNM home page in dark theme"
                 />
               </div>
@@ -281,7 +366,7 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/nmpsia_authform.png"
+                  src="/images-compressed/nmpsia_authform.png"
                   alt="NMPSIA health info form"
                 />
               </div>
@@ -340,7 +425,7 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/nmpsia_contact_db.png"
+                  src="/images-compressed/nmpsia_contact_db.png"
                   alt="NMPSIA district contacts"
                 />
               </div>
@@ -401,7 +486,7 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/wildfire-form-scrnsht.png"
+                  src="/images-compressed/wildfire-form-scrnsht.png"
                   alt="The wildfire HTML form on the NMPSIA website"
                 />
               </div>
@@ -472,7 +557,7 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/packngo.png"
+                  src="/images-compressed/packngo.png"
                   alt="Pack N Go app"
                 />
               </div>
@@ -528,7 +613,7 @@
                 </p>
                 <img
                   class="img-fluid"
-                  src="/images/todo.png"
+                  src="/images-compressed/todo.png"
                   alt="To Do List app"
                 />
               </div>
@@ -614,7 +699,7 @@
             <img
               class="img-fluid"
               style="max-width: 200px"
-              src="./images/ezgif-kip-yes-i-love-tech.gif"
+              src="./images-compressed/ezgif-kip-yes-i-love-tech.gif"
               alt="Kip Dynamite gif, just for kicks"
             />
           </div>
@@ -706,40 +791,12 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const mobileNavButton = document.querySelector(".btn-mobile-nav");
-      const mainNav = document.querySelector(".main-nav");
-      const navLinks = document.querySelectorAll(".main-nav-link");
-      const body = document.body;
-      const submitForm = document.getElementById("submitForm");
-      const form = document.querySelector(".contact");
-
-      // mobile nav toggle
-      mobileNavButton.addEventListener("click", () => {
-        body.classList.toggle("nav-open");
-      });
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          body.classList.remove("nav-open");
-        });
-      });
-
-      // form submission
-      // form.addEventListener("submit", (event) => {
-      //   event.preventDefault(); // Prevent the default form submission
-      //   const firstName = document.getElementById("firstNameInput").value;
-      //   const lastName = document.getElementById("lastNameInput").value;
-      //   const email = document.getElementById("exampleInputEmail1").value;
-      //   const message = document.getElementById(
-      //     "exampleFormControlTextarea1"
-      //   ).value;
-
-      //   // Here you can handle the form data, e.g., send it to a server or display a message
-      //   console.log(
-      //     `First Name: ${firstName}, Last Name: ${lastName}, Email: ${email}, Message: ${message}`
-      //   );
-      // });
-    </script>
+    <div id="lightbox-overlay" style="display: none">
+      <span id="lightbox-close" tabindex="0" aria-label="Close art viewer"
+        >&times;</span
+      >
+      <img id="lightbox-img" src="" alt="Artwork large view" />
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
