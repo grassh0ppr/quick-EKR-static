@@ -233,8 +233,10 @@ button#colorToggle {
   max-width: 48rem;
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
-  color: rgba(255, 255, 255, 0.698);
+  color: #493461;
   line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .btn-flexbox {
@@ -449,11 +451,21 @@ section h2 {
 
 /* CONTACT SECTION */
 #contact {
-  background-image: url(./images/paper_plane.png);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(./images/paper_plane.png);
   background-repeat: no-repeat;
   background-size: fit;
   background-attachment: fixed;
   background-position: bottom;
+  padding: 4rem 0;
+  border-radius: 1.2rem;
+  margin: 2rem auto;
+  max-width: 120rem;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 #contact img {
   width: 42rem;
@@ -627,6 +639,176 @@ footer p {
   color: #d6b8ee;
 }
 
+/* LIGHT MODE STYLES */
+@media (prefers-color-scheme: light) {
+  .dark {
+    background-color: transparent;
+    color: #493461;
+  }
+
+  .dark #hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(232, 231, 239, 0.651),
+        rgba(206, 199, 222, 0.486)
+      ),
+      url(./images-compressed/watercolor-1.jpg);
+  }
+
+  .dark #hero p {
+    color: rgb(22, 5, 146);
+  }
+
+  .dark .hero-paragraph {
+    color: rgba(255, 255, 255, 0.698);
+  }
+
+  .dark a:link,
+  .dark a:visited {
+    color: #ff008c;
+  }
+
+  .dark .header {
+    background-color: #eba5fcbe;
+  }
+
+  .dark .header a:link,
+  .dark .header a:visited {
+    color: #ff008c;
+  }
+
+  .dark .header a:hover,
+  .dark .header a:active {
+    color: #7ae649;
+  }
+
+  .dark .main-nav {
+    background-color: #d6b8eecf;
+  }
+
+  .dark #projects,
+  .dark #about {
+    background: rgba(255, 255, 255, 0.85);
+    color: #493461;
+  }
+
+  .dark .form.contact {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #493461;
+  }
+
+  .dark .form-text {
+    color: #493461;
+  }
+
+  .dark .project h3 {
+    color: #fff;
+  }
+
+  .dark .modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #493461;
+  }
+
+  .dark .modal-header {
+    border-bottom: 1px solid #c966da;
+  }
+
+  .dark .modal-footer {
+    border-top: 1px solid #c966da;
+  }
+
+  .dark .modal-header button.btn-close {
+    color: #493461;
+  }
+
+  .dark footer {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .dark footer p {
+    color: #493461;
+  }
+
+  .dark .github-link {
+    color: #493461;
+  }
+
+  .dark .github-link a {
+    color: #ff008c;
+  }
+}
+
+/* DARK MODE STYLES */
+@media (prefers-color-scheme: dark) {
+  .dark {
+    background-color: #18063dac;
+    color: #dadada;
+  }
+
+  .dark #hero {
+    height: 100vh;
+    min-height: 64rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(2, 2, 127, 0.349)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .dark #hero p {
+    color: rgb(22, 5, 146);
+  }
+
+  .dark .hero-paragraph {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  .dark a:link,
+  .dark a:visited {
+    color: #ff008c;
+  }
+
+  .dark .header {
+    background-color: #121126;
+  }
+
+  .dark .header a:link,
+  .dark .header a:visited {
+    color: #ff008c;
+  }
+
+  .dark .header a:hover,
+  .dark .header a:active {
+    color: #7ae649;
+  }
+
+  .dark .main-nav {
+    background-color: #121126ef;
+  }
+
+  .dark #contact {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(18, 2, 61, 0.9),
+        rgba(18, 2, 61, 0.8)
+      ),
+      url(./images/paper_plane.png);
+  }
+
+  .dark .form.contact {
+    background-color: rgba(18, 2, 61, 0.85);
+    color: #f7dcfc;
+  }
+
+  .dark .form-text {
+    color: #f7dcfc;
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 848px) {
@@ -716,10 +898,6 @@ footer p {
 
   #contact img {
     width: 32rem;
-  }
-
-  .hero-paragraph {
-    font-size: 1.6rem;
   }
 }
 
@@ -891,52 +1069,6 @@ footer p {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark {
-    background-color: #18063dac;
-    color: #dadada;
-  }
-
-  .dark #hero {
-    height: 100vh;
-    min-height: 64rem;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.85),
-      rgba(2, 2, 127, 0.349)
-    );
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .dark #hero p {
-    color: #dadada;
-  }
-
-  .dark a:link,
-  .dark a:visited {
-    color: #ff008c;
-  }
-
-  .dark .header {
-    background-color: #121126;
-  }
-
-  .dark .header a:link,
-  .dark .header a:visited {
-    color: #ff008c;
-  }
-
-  .dark .header a:hover,
-  .dark .header a:active {
-    color: #7ae649;
-  }
-
-  .dark .main-nav {
-    background-color: #121126ef;
-  }
-}
-
 .art-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1009,8 +1141,7 @@ footer p {
   transition: background 0.2s;
   border: none;
 }
-#lightbox-close:hover,
-#lightbox-close:focus {
+#lightbox-close:hover {
   background: #ff008c;
   color: #fff;
   outline: 2px solid #fff;
