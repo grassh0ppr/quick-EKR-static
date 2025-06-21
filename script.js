@@ -78,6 +78,23 @@ artPieces.forEach((img) => {
   });
 });
 
+// Lightbox functionality for setup picture link
+const setupPicLink = document.querySelector(".setup-pic-link");
+if (setupPicLink) {
+  setupPicLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const imageSrc = this.getAttribute("data-image");
+    const description = this.getAttribute("data-description");
+
+    lightboxImg.src = imageSrc;
+    lightboxImg.alt = description;
+    lightboxDescription.textContent = description;
+
+    lightboxOverlay.style.display = "flex";
+    lightboxClose.focus();
+  });
+}
+
 function closeLightbox() {
   lightboxOverlay.style.display = "none";
   lightboxImg.src = "";
