@@ -61,12 +61,18 @@ if (showArtGallery && artGallerySection) {
 const lightboxOverlay = document.getElementById("lightbox-overlay");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
+const lightboxDescription = document.getElementById("lightbox-description");
 const artPieces = document.querySelectorAll(".art-piece");
 
 artPieces.forEach((img) => {
   img.addEventListener("click", function () {
     lightboxImg.src = this.src;
     lightboxImg.alt = this.alt;
+
+    // Extract and display the description from alt text
+    const description = this.alt;
+    lightboxDescription.textContent = description;
+
     lightboxOverlay.style.display = "flex";
     lightboxClose.focus();
   });
@@ -75,6 +81,7 @@ artPieces.forEach((img) => {
 function closeLightbox() {
   lightboxOverlay.style.display = "none";
   lightboxImg.src = "";
+  lightboxDescription.textContent = "";
 }
 
 if (lightboxClose) {
