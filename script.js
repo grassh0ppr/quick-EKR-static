@@ -39,7 +39,21 @@ if (showArtGallery && artGallerySection) {
   showArtGallery.addEventListener("click", function (e) {
     e.preventDefault();
     artGallerySection.style.display = "block";
+
+    // Add entrance animation class
+    artGallerySection.classList.add("gallery-revealed");
+
+    // Smooth scroll to gallery
     artGallerySection.scrollIntoView({ behavior: "smooth" });
+
+    // Trigger staggered animations for art pieces
+    const artPieces = document.querySelectorAll(".art-piece");
+    artPieces.forEach((piece, index) => {
+      setTimeout(() => {
+        piece.style.animationDelay = `${index * 0.1}s`;
+        piece.classList.add("animate-in");
+      }, 100);
+    });
   });
 }
 
