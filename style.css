@@ -475,6 +475,8 @@ section h2 {
 #contact .blurb {
   display: inline-block;
   font-size: 1.8rem;
+  max-width: 66rem;
+  text-align: center;
 }
 
 #contact h2 {
