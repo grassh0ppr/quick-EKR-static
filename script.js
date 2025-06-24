@@ -16,22 +16,6 @@ navLinks.forEach((link) => {
   });
 });
 
-// form submission
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault(); // Prevent the default form submission
-//   const firstName = document.getElementById("firstNameInput").value;
-//   const lastName = document.getElementById("lastNameInput").value;
-//   const email = document.getElementById("exampleInputEmail1").value;
-//   const message = document.getElementById(
-//     "exampleFormControlTextarea1"
-//   ).value;
-
-//   // Here you can handle the form data, e.g., send it to a server or display a message
-//   console.log(
-//     `First Name: ${firstName}, Last Name: ${lastName}, Email: ${email}, Message: ${message}`
-//   );
-// });
-
 // Art gallery reveal
 const showArtGallery = document.getElementById("show-art-gallery");
 const artGallerySection = document.getElementById("art-gallery");
